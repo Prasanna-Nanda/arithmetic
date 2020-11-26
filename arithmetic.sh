@@ -9,3 +9,6 @@ echo "num1 + num2 * num3 : $val1"
 
 val2=$(($num1 * $num2 + $num3))
 echo "A * B + C : $val2"
+
+Val3=$(($num3 + $num1 / $num2))
+echo "C + A / B : $val3"

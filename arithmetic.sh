@@ -6,3 +6,6 @@ read -p " Enter number in c: " num3
 
 val1=$(($num1 + $num2 * $num3))
 echo "num1 + num2 * num3 : $val1"
+
+val2=$(($num1 * $num2 + $num3))
+echo "A * B + C : $val2"

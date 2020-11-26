@@ -15,3 +15,8 @@ echo "C + A / B : $val3"
 
 val4=$(($num1 % $num2 + $num3))
 echo "A % B + C : $val4"
+
+array=(val1 val2 val3 val4)
+for a in "${array[@]}"
+do
+	echo "$a"

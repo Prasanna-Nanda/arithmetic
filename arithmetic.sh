@@ -20,3 +20,11 @@ array=(val1 val2 val3 val4)
 for a in "${array[@]}"
 do
 	echo "$a"
+
+declare -A dict
+dict+=(["pos"]="${array[@]}")
+posarray=("${dict[pos]}")
+for a in "${posarray[@]}"
+do
+echo "$a"
+done

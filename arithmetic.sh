@@ -28,3 +28,21 @@ for a in "${posarray[@]}"
 do
 echo "$a"
 done
+
+for ((i=0; i<${array[@]}; i++))
+do
+	for ((j=0; j<${array[@]}; j++))
+	do
+	if (( ${array[$j]} -it ${array[$i]} ))
+	then
+	tmp=${array[$i]}
+	array[$i]=${number[$i]}
+	number[$j]=${tmp}
+	fi
+	done
+done
+for n in "${array[@]}"
+do
+echo "$n"
+done
+
